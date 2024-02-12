@@ -1,0 +1,184 @@
+:root{
+    --background-color-principal: #EFEFEF;
+    --background-color-header: #535971;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-staatliches: 'Staatliches', sans-serif;
+    --color-font-label: #4E4958;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-poppins);
+}
+
+body{
+    background: var(--background-color-principal);
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background-color: var(--background-color-header);
+    width: 100%;
+    height: 436px;
+    z-index: -1;
+}
+
+.page{
+    margin: auto;
+    width: 750px;
+}
+
+header{
+    width: 417px;
+    color: #fff;
+}
+
+header h1{
+    padding-top: 140px;
+    padding-bottom: 18px;
+    font-family: var(--font-staatliches);
+    font-size: 48px;
+    font-weight: 400;
+}
+
+header p{
+    font-family: var(--font-poppins);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 58px;
+}
+
+form{
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    min-height: 300px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+fieldset{
+    border: none;
+}
+
+label{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color-font-label);
+}
+
+input{
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    transition: 0.5s;
+}
+
+.legendas-form{
+    font-family: var(--font-staatliches);
+    font-size: 24px;
+    color: var(--background-color-header);
+    font-weight: 400;
+    line-height: 34px;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 36px;
+}
+
+fieldset label span{
+    padding-left: 9px;
+    color: #C1BCCC;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.names{
+    display: flex;
+    gap: 22px;
+}
+
+.names > div:nth-child(1){
+    width: 100%;
+}
+
+.names > div:nth-child(2){
+    width: 100%;
+}
+
+.blocos-form{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.fieldser-wraper{
+    display: flex;
+    flex-direction: column;
+}
+
+.datas-mentorias{
+    color: #535971;
+    font-family: var(--font-staatliches);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-bottom: 11px;
+    margin-top: 16px;
+}
+
+.primeira{
+    margin-top: 0;
+}
+
+.coll-3{
+    display: flex;
+    gap: 32px;
+}
+
+.coll-3 > div:nth-child(1){
+    width: 100%;
+}
+
+footer{
+    background: var(--background-color-header);
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+    margin-bottom: 200px;
+}
+
+.button{
+    display: flex;
+    width: 600px;
+    height: 55px;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    background: #FF5374;
+    border: none;
+    color: #fff;
+    font-family: var(--font-staatliches);
+    font-size: 20px;
+    line-height: 26px;
+    transition: 0.5s;
+}
+
+input:hover, input:focus{
+    border-color: #421f88;
+}
+
+button:hover{
+    background: #f33258;
+}
